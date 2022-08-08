@@ -1,0 +1,60 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  animation: rotation 7s infinite linear;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.section {
+  width: 45%;
+  height: auto;
+  background-color: #ff5d7d;
+  border-radius: 30px;
+  filter: drop-shadow(-1px 5px 11px #000);
+  color: white;
+  padding: 20px;
+}
+
+.counter {
+  color: black;
+  position: absolute;
+  right: 40px;
+}
+
+.nextQuest {
+  background-color: #ffc144;
+  font-weight: bold;
+  padding: 10px 5px;
+  width: 30%;
+  margin: 24px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.nextQuest:hover {
+  background-color: #ffd788;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
